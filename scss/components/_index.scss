@@ -1,0 +1,139 @@
+/* Index - Main */
+
+.index__banner {
+    width: 100%;
+    height: calc((100vh - 4rem) / 2);
+    position: relative;
+    background-color: rgb(249, 250, 252);
+}
+
+.index__banner--center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 25vh;
+    max-width: 50%;
+    z-index: 1;
+}
+
+.index__banner--bg {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    max-height: 50vh;
+}
+
+.carousel-image {
+    object-fit: cover;
+    height: calc((100vh - 4rem) / 2);
+}
+
+.index__intro {
+
+    h2 {
+        font-size: 5vh;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align: left;
+        line-height: 1.8em;
+    }
+}
+
+/* Index - Servicios */
+
+.index__servicios {
+    overflow: auto;
+    position: relative;
+    height: max(80vh,500px);
+}
+
+.tabcontent {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: max(80vh,500px);
+    width: 100%;
+}
+
+.index__serviciosMenu {
+
+    position: relative;
+    height: max(80vh,500px);
+    
+    h2 {
+        color: black;
+        font-size: 50px;
+        max-width: 60%;
+        text-align: left;
+        
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        
+        padding: 20px;
+        margin: 0;
+    }
+
+    div {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgba(256, 256, 256,0.40);
+        height: max(80vh,500px);
+        width: min(60% , 300px);
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 22px;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #f1f1f1;
+        }
+        
+        &.active {
+            background-color: #ddd;
+        }
+    }
+    
+    a {
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        z-index: 5;
+    }
+}
+
+/* Index - Clientes */
+
+.index__clientes{
+    
+    .cards {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 3%;
+    }
+
+    .card {
+        @include bg-color(white,20%);
+        color: black;
+        border-radius: 10px;
+    }
+
+    img{
+        border-radius: 100%;
+        width: 50%;
+        margin: 10% auto 5% auto;
+    }
+}

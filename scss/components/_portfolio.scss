@@ -1,0 +1,35 @@
+.portfolio__main {
+    @include bg-color(white,15%);
+    color: black;
+}
+
+.portfolio__flex {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: space-between;
+}
+
+.portfolio__item {
+    flex-basis: max(25%, 180px);
+    flex-grow: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    color: $color-primary;
+    background-color: $color-secondary;
+    font-family: $font-primaryLight;
+    border: grey solid 3px;
+    transition: all 0.2s ease;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.portfolio__empty {
+    flex-basis: max(25%, 200px);
+    flex-grow: 1;
+    height: 0px;
+}

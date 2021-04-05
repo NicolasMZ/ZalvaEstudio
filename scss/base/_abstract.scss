@@ -1,0 +1,29 @@
+$color-primary: rgb(255, 187, 23);
+$color-primarydark: rgb(182, 127, 0);;
+$color-secondarylight: rgb(3, 60, 68);
+$color-secondary: rgb(0, 37, 43);
+$color-secondarydark: rgb(9, 29, 39);
+
+$font-primary: Recoleta, sans-serif;
+$font-primaryLight: RecoletaLight, sans-serif;
+$font-primaryThin: RecoletaThin, sans-serif;
+$font-secondaryThin: RobotoThin, sans-serif;
+
+@mixin bg-color($color,$grad: 0%) {
+
+    @if($color == darktexture){
+        background-color: $color-secondary;
+        background-image: url(../img/fondo.jpg);
+        background-repeat: repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+    @else{
+        @if ($grad != 0%) {
+            background: radial-gradient(circle, $color 60%, darken($color,$grad) 100%);
+        }
+        @else {
+            background-color: $color;
+        }
+    }
+}
