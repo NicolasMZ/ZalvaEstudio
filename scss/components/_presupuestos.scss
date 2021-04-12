@@ -1,0 +1,55 @@
+.presup__bg{
+    @include bg-color(white, 10%);
+    width: 100%;
+}
+
+.presup__intro{
+    h2{
+        margin-bottom: 80px;
+        font-family: $font-secondaryThin;
+        font-size: 1.2rem;
+    }
+}
+
+.presup__container{
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 5%;
+
+    .item{
+        flex: 1 1 100px;
+        padding: 20px;
+        border-radius: 10px;
+        @include img-display(fit);
+
+        font-family: $font-primaryLight;
+        font-size: 1.1rem;
+    }
+    .item--1{
+        background-image: url(../img/texture-square1.png);
+    }
+    .item--2{
+        background-image: url(../img/texture-vertical2.png);
+    }
+    .item--3{
+        background-image: url(../img/texture-vertical1.png);
+    }
+
+    ul li{
+        list-style-image: url(../img/checkmark.png);
+        list-style-position: inside;
+        text-align: left;
+        line-height: 2rem;
+    }
+
+    h4{
+        margin: 30px;
+        font-size: 1.3rem;
+    }
+
+    a{
+        margin: 50px;
+    }
+}

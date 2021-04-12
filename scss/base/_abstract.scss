@@ -9,6 +9,8 @@ $font-primaryLight: RecoletaLight, sans-serif;
 $font-primaryThin: RecoletaThin, sans-serif;
 $font-secondaryThin: RobotoThin, sans-serif;
 
+
+
 @mixin bg-color($color,$grad: 0%) {
 
     @if($color == darktexture){
@@ -25,5 +27,24 @@ $font-secondaryThin: RobotoThin, sans-serif;
         @else {
             background-color: $color;
         }
+    }
+}
+
+@mixin img-display($tipo) {
+    
+    @if($tipo == full){
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        background-size: contain;
+    }
+
+    @if($tipo == fit){
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
     }
 }
