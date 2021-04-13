@@ -492,6 +492,10 @@ footer {
   background-size: cover;
   font-family: RecoletaLight, sans-serif;
   font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+.presup__container .item:hover {
+  transform: scale(1.03);
 }
 .presup__container .item--1 {
   background-image: url(../img/texture-square1.png);
@@ -501,6 +505,9 @@ footer {
 }
 .presup__container .item--3 {
   background-image: url(../img/texture-vertical1.png);
+}
+.presup__container ul {
+  padding: 20px 0 10px 0;
 }
 .presup__container ul li {
   list-style-image: url(../img/checkmark.png);

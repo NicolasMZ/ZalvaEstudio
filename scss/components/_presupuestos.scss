@@ -26,6 +26,12 @@
 
         font-family: $font-primaryLight;
         font-size: 1.1rem;
+
+        
+        transition: all 0.2s ease;
+        &:hover{
+            transform: scale(1.03);
+        }
     }
     .item--1{
         background-image: url(../img/texture-square1.png);
@@ -37,12 +43,17 @@
         background-image: url(../img/texture-vertical1.png);
     }
 
-    ul li{
+    ul {
+        padding: 20px 0 10px 0;
+        
+        li{
         list-style-image: url(../img/checkmark.png);
         list-style-position: inside;
         text-align: left;
         line-height: 2rem;
+        }
     }
+    
 
     h4{
         margin: 30px;
