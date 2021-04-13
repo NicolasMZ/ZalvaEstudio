@@ -59,12 +59,12 @@ body {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-family: Recoleta, sans-serif;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-family: RecoletaLight, sans-serif;
 }
 
@@ -521,6 +521,14 @@ footer {
 }
 .presup__container a {
   margin: 50px;
+}
+
+.presup__form h2 {
+  padding-top: 50px;
+}
+.presup__form form {
+  width: 50%;
+  margin: 30px auto;
 }
 
 .servicios__grid {

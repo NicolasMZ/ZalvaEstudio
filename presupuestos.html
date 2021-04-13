@@ -101,11 +101,43 @@
                 </div>
             </div>
 
-            <section id="form-presupuestos margen-main">
+            <section id="form-presupuestos" class="presup__form margen-main">
 
-                <h3>Contanos un poco más de tu proyecto!</h3>
+                <h2>Solicitá tu presupuesto</h2>
 
-                <div></div> <!-- Formulario de presupuestos. Aún no cuento con el conocimiento para estructurarlo -->
+                <form action="/server/" method="post" class="contact__form">
+                    
+                    <div>
+                        <label for="field-nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="field-nombre">
+                    </div>
+                    
+                    <div>
+                        <label for="field-email">E-mail</label>
+                        <input type="text" name="E-mail" id="field-email">
+                    </div>
+                    
+                    <div>
+                        <label for="field-telefono">Teléfono (opcional)</label>
+                        <input type="tel" name="Telefono" id="field-telefono">
+                    </div>
+                    
+                    <div>
+                        <label for="field-asunto">Asunto</label>
+                        <input type="text" name="Asunto" id="field-asunto">
+                    </div>
+                    
+                    <div>
+                        <label for="field-mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="field-mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <div class="contact__buttons">
+                        <button type="reset" class="button--dark">Limpiar formulario</button>
+                        <button type="submit" class="button--dark">Enviar mensaje</button>
+                    </div>
+                    
+                </form>
 
             </section>
 
